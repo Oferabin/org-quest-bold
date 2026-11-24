@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>קווסט ארגוני × BOLD</title>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--p:#061c49;--l:#0d3278;--d:#040f29;--g:#FFD700;--w:#f4f6fb}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:var(--d);color:var(--w);font-family:Heebo,sans-serif;overflow:hidden}
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:6vh 7vw;text-align:center;opacity:0;pointer-events:none;transition:opacity .6s,transform .6s;transform:translateY(20px);background:radial-gradient(circle at 70% 20%,var(--l),var(--p) 45%,var(--d));overflow-y:auto}
+.slide.on{opacity:1;pointer-events:auto;transform:none}
+h1{font-size:clamp(42px,8vw,110px);font-weight:900;line-height:1}
+h2{font-size:clamp(28px,4.2vw,56px);font-weight:900;margin-bottom:3vh}
+p.lead{font-size:clamp(17px,2vw,26px);font-weight:300;max-width:950px;line-height:1.6}
+.gold{color:var(--g)}
+.tag{letter-spacing:.3em;font-size:14px;color:var(--g);margin-bottom:2vh}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.6vw;width:100%;max-width:1150px;margin-top:2vh}
+.card{background:rgba(255,255,255,.06);border:1px solid rgba(255,215,0,.25);border-radius:18px;padding:2.6vh 1.6vw;text-align:right}
+.card b{display:block;font-size:20px;color:var(--g);margin-bottom:6px}
+.card span{font-weight:300;line-height:1.5;font-size:15px}
+.card q{display:block;margin-top:10px;font-size:14px;font-style:italic;opacity:.85;border-right:2px solid var(--g);padding-right:8px}
+.card q::before,.card q::after{content:''}
+.num{font-size:44px;font-weight:900;color:var(--g)}
+.vs{display:flex;gap:2vw;max-width:1000px;width:100%;margin-top:2vh;flex-wrap:wrap}
+.vs>div{flex:1;min-width:260px;border-radius:18px;padding:3vh 2vw;text-align:right;line-height:1.9;font-size:17px}
+.vs .old{background:rgba(255,255,255,.04);opacity:.7}
+.vs .new{background:rgba(255,215,0,.1);border:1px solid var(--g)}
+.screen{width:min(820px,100%);aspect-ratio:16/9;border-radius:16px;border:2px solid var(--g);position:relative;overflow:hidden;box-shadow:0 20px 80px rgba(0,0,0,.6);background:linear-gradient(135deg,#1b3a7a,#061c49)}
+.scene{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-end;padding:4%;background:linear-gradient(transparent 40%,rgba(4,15,41,.95))}
+.scene .who{font-size:13px;color:var(--g);letter-spacing:.2em;text-align:right}
+.scene .txt{font-size:clamp(15px,2vw,21px);text-align:right;margin:6px 0 14px}
+.opts{display:flex;gap:12px}
+.opts button{flex:1;padding:14px;border-radius:12px;border:1px solid var(--g);background:rgba(6,28,73,.85);color:var(--w);font:700 16px Heebo;cursor:pointer;position:relative;overflow:hidden}
+.opts button:hover{background:var(--l)}
+.bar{position:absolute;inset:0 auto 0 0;background:rgba(255,215,0,.35);width:0;transition:width 1s}
+.opts button em{position:relative;font-style:normal}
+.ill{position:absolute;top:8%;left:50%;transform:translateX(-50%);font-size:clamp(60px,10vw,120px)}
+.timer{position:absolute;top:4%;right:4%;background:var(--g);color:var(--d);font-weight:900;padding:4px 12px;border-radius:20px;font-size:14px}
+nav{position:fixed;bottom:3vh;left:50%;transform:translateX(-50%);display:flex;gap:8px;z-index:9}
+nav i{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.3);cursor:pointer}
+nav i.on{background:var(--g)}
+.arrows{position:fixed;bottom:2.4vh;left:3vw;z-index:9;display:flex;gap:10px}
+.arrows button{background:none;border:1px solid var(--g);color:var(--g);width:40px;height:40px;border-radius:50%;font-size:18px;cursor:pointer}
+.steps{display:flex;gap:1.5vw;flex-wrap:wrap;justify-content:center;margin-top:3vh;max-width:1150px}
+.step{flex:1;min-width:170px;border-top:3px solid var(--g);padding-top:12px;text-align:right;line-height:1.5}
+.step b{color:var(--g);font-size:28px}
+</style>
+</head>
+<body>
+
+<section class="slide on">
+  <div class="tag">BOLD · פתרון יצירתי לקמפיינים פנים־ארגוניים</div>
+  <h1>קווסט <span class="gold">ארגוני</span></h1>
+  <p class="lead" style="margin-top:3vh">כשיש מסר שחייב להיקלט – תנו לעובדים להחליט מה קורה בסיפור 👀</p>
+</section>
+
+<section class="slide">
+  <h2>יש לכם מסר. <span class="gold">איך גורמים לו להישאר?</span></h2>
+  <p class="lead">מערכת חדשה, נוהל חדש, מיזוג, ערכים שרוצים להשריש.<br>המייל נמחק, הלומדה מדולגת, הפוסטר על הקיר נהיה שקוף.<br><b class="gold">אנשים לא זוכרים מסרים – הם זוכרים החלטות שקיבלו.</b></p>
+</section>
+
+<section class="slide">
+  <h2>הפתרון: קמפיין בצורת <span class="gold">סדרה בחירתית</span></h2>
+  <p class="lead">סדרת פרקים קצרים, מבוססת מציאות, שבה עובדים מוכרים מהחברה (מונפשים ב־AI) נתקלים בדיוק בדילמות שהמסר שלכם עוסק בהן.<br>כל פרק נגמר בבחירה – <b class="gold">והעובדים מצביעים מה הדמות תעשה.</b><br>התוצאה: המסר נלמד מבפנים, דרך התנסות, לא דרך הטפה.</p>
+</section>
+
+<section class="slide">
+  <div class="tag">מתי זה הכלי הנכון</div>
+  <h2>קמפיינים שמתאימים לפורמט</h2>
+  <div class="grid">
+    <div class="card"><b>🖥️ הטמעת מערכת / תהליך חדש</b><span>CRM, ERP, מערכת שעות, תהליך רכש.</span><q>"דני מתעקש להמשיך באקסל. מה עושים?"</q></div>
+    <div class="card"><b>🔐 אבטחת מידע</b><span>פישינג, סיסמאות, מסמכים רגישים.</span><q>"מייל מהמנכ"ל מבקש העברה דחופה…"</q></div>
+    <div class="card"><b>🤖 אימוץ כלי AI</b><span>מה מותר להעלות, איך להשתמש נכון.</span><q>"להדביק את חוזה הלקוח בצ'אט?"</q></div>
+    <div class="card"><b>⚖️ אתיקה וציות</b><span>קוד אתי, ניגוד עניינים, מתנות מספקים.</span><q>"ספק שולח בקבוק יין לחג."</q></div>
+    <div class="card"><b>🦺 בטיחות</b><span>נהלי עבודה ברצפת ייצור, שטח, מעבדה.</span><q>"נשארו 10 דק' למשמרת והמגן לא תקין."</q></div>
+    <div class="card"><b>🔄 שינוי ארגוני / מיזוג</b><span>מבנה חדש, צוותים שמתאחדים, מנהל חדש.</span><q>"שני צוותים, ישיבה אחת, נוהל אחד."</q></div>
+    <div class="card"><b>🤝 ערכים ותרבות</b><span>שירות, שקיפות, שיתוף פעולה, מניעת הטרדה.</span><q>"שמעת בדיחה לא במקום בישיבה."</q></div>
+    <div class="card"><b>🌱 רווחה ואיזון</b><span>שעות עבודה, בקשת עזרה, חוסן.</span><q>"17:58, מייל דחוף, והגן נסגר ב־18:00."</q></div>
+  </div>
+</section>
+
+<section class="slide">
+  <h2>לא עוד לומדה</h2>
+  <div class="vs">
+    <div class="old"><b>קמפיין רגיל</b><br>✗ מסר מלמעלה למטה<br>✗ צפייה פסיבית<br>✗ "עוד מייל מ־HR"<br>✗ אין לדעת מה נקלט</div>
+    <div class="new"><b class="gold">קווסט ארגוני</b><br>✓ העובדים בוחרים – ולכן אכפת להם<br>✓ פרק חדש = סיבה לחזור<br>✓ שיחות מסדרון: "מה הצבעת?"<br>✓ כל הצבעה = דאטה על מה העובדים חושבים</div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="tag">דוגמה חיה · קמפיין אבטחת מידע</div>
+  <h2>פרק 1: "המייל מהמנכ"ל"</h2>
+  <div class="screen" id="demo"></div>
+  <p class="lead" style="font-size:15px;margin-top:2vh;opacity:.7">לחצו ובחרו – כך נראה רגע ההחלטה בכל פרק</p>
+</section>
+
+<section class="slide">
+  <h2>איך בונים קמפיין</h2>
+  <div class="steps">
+    <div class="step"><b>01</b><br>אפיון המסר: מה העובדים צריכים לדעת / לעשות אחרי הקמפיין</div>
+    <div class="step"><b>02</b><br>מיפוי דילמות אמיתיות מהשטח + בחירת "כוכבים" מהחברה</div>
+    <div class="step"><b>03</b><br>אוואטר AI לכל דמות – באישורם, בלי יום צילום</div>
+    <div class="step"><b>04</b><br>פרקים של 2–3 דק' + הצבעה ב־WhatsApp / Teams / פורטל</div>
+    <div class="step"><b>05</b><br>פרק סיום שחושף את "התשובה הנכונה" + דוח תובנות</div>
+  </div>
+</section>
+
+<section class="slide">
+  <h2>מבנה קמפיין טיפוסי</h2>
+  <div class="grid">
+    <div class="card"><div class="num">4–6</div><span>פרקים לאורך 4–6 שבועות – ליווי מלא של ההשקה</span></div>
+    <div class="card"><div class="num">2–3'</div><span>אורך פרק, מותאם לנייד</span></div>
+    <div class="card"><div class="num">48h</div><span>חלון הצבעה – יוצר ציפייה ושיח</span></div>
+    <div class="card"><div class="num">1</div><span>דוח מדידה: השתתפות, בחירות, פערי ידע שזוהו</span></div>
+  </div>
+</section>
+
+<section class="slide">
+  <h2>אפשרויות התקשרות</h2>
+  <div class="grid">
+    <div class="card"><b>פיילוט</b><span>פרק אחד על מסר אחד. בודקים תגובה לפני שמתחייבים.</span></div>
+    <div class="card"><b>קמפיין</b><span>4–6 פרקים סביב השקה / תהליך, כולל מנגנון הצבעה ודוח.</span></div>
+    <div class="card"><b>פלטפורמה שנתית</b><span>"עונה" לכל קמפיין בשנה – אותן דמויות, נושא חדש. הדמויות הופכות לפנים של התקשורת הפנימית.</span></div>
+  </div>
+</section>
+
+<section class="slide">
+  <h1 class="gold">BOLD</h1>
+  <p class="lead" style="margin-top:3vh">איזה מסר אתם צריכים להשריש השנה?<br><b>בואו נהפוך אותו לסיפור שהעובדים יכתבו.</b></p>
+</section>
+
+<nav id="dots"></nav>
+<div class="arrows"><button onclick="go(i+1)">‹</button><button onclick="go(i-1)">›</button></div>
+
+<script>
+const S=[...document.querySelectorAll('.slide')];let i=0;
+const dots=document.getElementById('dots');
+S.forEach((_,k)=>{const d=document.createElement('i');d.onclick=()=>go(k);dots.appendChild(d)});
+function go(n){if(n<0||n>=S.length)return;S[i].classList.remove('on');i=n;S[i].classList.add('on');[...dots.children].forEach((d,k)=>d.classList.toggle('on',k==i))}
+go(0);
+addEventListener('keydown',e=>{if(['ArrowLeft','PageDown',' '].includes(e.key))go(i+1);if(['ArrowRight','PageUp'].includes(e.key))go(i-1)});
+
+const story={
+ a:{ill:'📧',who:'רונית · חשבות',txt:'16:40. מייל "מהמנכ"ל": "אני בטיסה, תעבירי 48,000 ₪ לספק החדש עד 17:00. דחוף ודיסקרטי."',o:[['מעבירה – זה המנכ"ל','b',27],['מתקשרת לוודא','c',73]]},
+ b:{ill:'🚨',who:'רונית · למחרת',txt:'הכסף יצא. המנכ"ל בכלל לא היה בטיסה. מחלקת אבטחת מידע מתקשרת…',o:[['מסתירה','d',12],['מדווחת מיד','d',88]]},
+ c:{ill:'📞',who:'רונית · 16:45',txt:'העוזרת של המנכ"ל: "הוא יושב פה לידי." – רונית זיהתה פישינג. מה עכשיו?',o:[['מוחקת ושוכחת','d',35],['מדווחת לאבטחת מידע','d',65]]},
+ d:{ill:'🎬',who:'סוף פרק 1',txt:'הבחירה שלכם נרשמה. בפרק הבא: מה קרה לכל השאר שקיבלו את אותו מייל?',o:[['להתחיל מחדש','a',0]]}
+};
+function show(k){const s=story[k],el=document.getElementById('demo');
+ el.innerHTML=`<div class="ill">${s.ill}</div>${s.o.length>1?'<div class="timer">⏱ 47:59 להצבעה</div>':''}<div class="scene"><div class="who">${s.who}</div><div class="txt">${s.txt}</div><div class="opts">${s.o.map(([t,n,p])=>`<button data-n="${n}" data-p="${p}"><span class="bar"></span><em>${t}</em></button>`).join('')}</div></div>`;
+ el.querySelectorAll('button').forEach(b=>b.onclick=()=>{
+  if(b.dataset.p==0)return show(b.dataset.n);
+  el.querySelectorAll('button').forEach(x=>{x.disabled=1;x.querySelector('.bar').style.width=x.dataset.p+'%';x.querySelector('em').textContent+=' · '+x.dataset.p+'%'});
+  setTimeout(()=>show(b.dataset.n),1600)})}
+show('a');
+</script>
+</body>
+</html>
